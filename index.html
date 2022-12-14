@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>GynFit</title>
 </head>
 <body>
+
+    <!-- banner -->
+    <section class="banner" id="home">
+        <header>
+            <a href="#" class="logo">FitGym</a>
+
+<!-- onclick="toggleMenu();  MENU MOBILE -->
+
+            <div class="toggleMenu" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#price">Preços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Aulas</a></li>
+                <li><a href="#">Mais</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>NO PAIN NO GAIN</h2>
+                <h3>PERFECT & FIT BODY</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore excepturi fugiat recusandae atque pariatur veritatis ea id.</p>
+                <a href="#">Junte-se a nós</a>
+            </div>
+        </div>
+
+        <div class="smi">
+            <ul>
+                <li><a href="#"><img src="./assets/instagram.png" alt="icon do instagram"></a></li>
+                <li><a href="#"><img src="./assets/facebook.png" alt="icon do facebook"></a></li>
+                <li><a href="#"><img src="./assets/twitter.png" alt="icon do twitter"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- card de preços -->
+    <div class="price-card" id="price">
+        <div class="card">
+            <h1 class="card-price">$24</h1>
+            <h1 class="card-name">01</h1>
+            <h3>Um Mês</h3>
+            <ul class="card-list">
+                <li class="card-items">8 treinos,</li>
+                <li class="card-items">4 swimming pool sessions,</li>
+                <li class="card-items">3 massage sessions,</li>
+                <li class="card-items">Trainer consultation,</li>
+            </ul>
+
+            <!-- parei aqui min 3:19 parte 2 -->
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+
+        // munu mobile
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
     
 </body>
 </html>
