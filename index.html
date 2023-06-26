@@ -1,84 +1,638 @@
 <!DOCTYPE html>
-<html lang="tp-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <title>FitNwo</title>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>GynFit</title>
-</head>
-<body>
+    <!-- seo tags -->
+    <meta name="title" content="MeuShape" />
+    <meta
+      name="description"
+      content="Dicas de exercícios, saiba qual grupo muscular cada exercício trabalha, dicas de alimentos e suplementação. "
+    />
+    <meta
+      name="keywords"
+      content="exercícios, hipertrofia, alimentos, nutricionais, Musculação, calorias, gorduras, proteínas, carboidratos, Treinamento de força, Exercícios físicos, Fitness, Ganho de massa muscular,Definição muscular, Dicas de treino, Ganho de massa muscular, Suplementos alimentares, Catabolismo, Anabolismo, Rotina de treino,Cutting,Bulking  "
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Portuguese" />
+    <meta name="author" content="Paulo Meira" />
+    <!-- seo tags -->
 
-    <!-- banner -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Banner-->
     <section class="banner" id="home">
-        <header>
-            <a href="#" class="logo">FitGym</a>
+      <header>
+        <a href="#" class="logo"><span class="log">fit</span> Now</a>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#exercise">Exercícios</a></li>
+          <li><a href="#variations">Variações</a></li>
+          <li><a href="#food">Alimentação</a></li>
+          <li><a href="#supplementation">Suplementos</a></li>
+        </ul>
+      </header>
 
-<!-- onclick="toggleMenu();  MENU MOBILE -->
-
-            <div class="toggleMenu" onclick="toggleMenu();"></div>
-            <ul class="navigation">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#price">Preços</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Aulas</a></li>
-                <li><a href="#">Mais</a></li>
-            </ul>
-        </header>
-        <div class="content">
-            <div class="contentBx">
-                <h2>NO PAIN NO GAIN</h2>
-                <h3>PERFECT & FIT BODY</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam tempore excepturi fugiat recusandae atque pariatur veritatis ea id.</p>
-                <a href="#">Junte-se a nós</a>
-            </div>
+      <div class="content" id="home">
+        <div class="contentBx">
+          <h2>DA FALHA AO GANHO</h2>
+          <br />
+          <h3>Mude seus hábitos, mude seu corpo, mude sua vida.</h3>
+          <p>
+            E muito importante variar os métodos de treinamento para evitar a
+            adaptação muscular e manter o progresso no treinamento. <br />
+            E também é recomendado que um profissional de educação física seja
+            consultado para orientar o treinamento e evitar lesões.
+          </p>
         </div>
-
-        <div class="smi">
-            <ul>
-                <li><a href="#"><img src="./assets/instagram.png" alt="icon do instagram"></a></li>
-                <li><a href="#"><img src="./assets/facebook.png" alt="icon do facebook"></a></li>
-                <li><a href="#"><img src="./assets/twitter.png" alt="icon do twitter"></a></li>
-            </ul>
-        </div>
+      </div>
     </section>
 
-    <!-- card de preços -->
-    <div class="price-card" id="price">
-        <div class="card">
-            <h1 class="card-price">$24</h1>
-            <h1 class="card-name">01</h1>
-            <h3>Um Mês</h3>
-            <ul class="card-list">
-                <li class="card-items">8 treinos,</li>
-                <li class="card-items">4 swimming pool sessions,</li>
-                <li class="card-items">3 massage sessions,</li>
-                <li class="card-items">Trainer consultation,</li>
-            </ul>
+    <!-- Divisão Semanal -->
 
-            <!-- parei aqui min 3:19 parte 2 -->
+    <div class="exercise-card" id="exercise">
+      <h1 class="card-treino">Dicas de Exercícios</h1>
+
+      <div class="empurrar-card">
+        <h1 class="card-exercise">Ombros</h1>
+        <h1 class="card-name">OMBROS</h1>
+        <h3>Exemplos de exercícios para trabalhar os ombros:</h3>
+        <ul class="card-list">
+          <li class="card-items">Desenvolvimento militar.</li>
+          <li class="card-items">Elevação lateral.</li>
+          <li class="card-items">Elevação frontal.</li>
+          <li class="card-items">Remada alta.</li>
+          <li class="card-items">Desenvolvimento com halteres.</li>
+          <li class="card-items">Remada baixa com barra.</li>
+          <li class="card-items">Elevação lateral inclinada.</li>
+          <li class="card-items">Remada unilateral com halteres.</li>
+          <li class="card-items">Desenvolvimento com barra.</li>
+          <li class="card-items">Elevação lateral com cabo.</li>
+        </ul>
+
+      </div>
+
+      <div class="empurrar-card">
+        <h1 class="card-exercise">Peitoral</h1>
+        <h1 class="card-name">PEITORAL</h1>
+        <h3>Exemplos de exercícios para trabalhar o peitoral:</h3>
+        <ul class="card-list">
+          <li class="card-items">Supino reto com barra.</li>
+          <li class="card-items">Supino inclinado com barra.</li>
+          <li class="card-items">Supino declinado com barra.</li>
+          <li class="card-items">Supino com halteres.</li>
+          <li class="card-items">Supino inclinado com halteres.</li>
+          <li class="card-items">Supino declinado com halteres.</li>
+          <li class="card-items">Crucifixo com halteres.</li>
+          <li class="card-items">Pullover com halteres.</li>
+          <li class="card-items">Flexão de braço.</li>
+          <li class="card-items">Flyes com cabos.</li>
+        </ul>
+
+      </div>
+
+      <div class="empurrar-card">
+        <h1 class="card-exercise">Costas</h1>
+        <h1 class="card-name">COSTAS</h1>
+        <h3>Exemplos de exercícios para trabalhar as costas:</h3>
+        <ul class="card-list">
+          <li class="card-items">Remada com barra.</li>
+          <li class="card-items">Remada unilateral com halteres.</li>
+          <li class="card-items">Remada com cabo.</li>
+          <li class="card-items">Pull-ups.</li>
+          <li class="card-items">Chin-ups.</li>
+          <li class="card-items">Levantamento terra.</li>
+          <li class="card-items">Hiperextensão.</li>
+          <li class="card-items">Remada com halteres.</li>
+          <li class="card-items">Barra fixa.</li>
+          <li class="card-items">Remada curvada.</li>
+        </ul>
+
+      </div>
+
+        <div class="empurrar-card">
+          <h1 class="card-exercise">Quadríceps</h1>
+          <h1 class="card-name">QUADRÍCEPS</h1>
+          <h3>Exemplos de exercícios para trabalhar os Quadríceps:</h3>
+          <ul class="card-list">
+            <li class="card-items">Agachamento com barra.</li>
+            <li class="card-items">Leg Press.</li>
+            <li class="card-items">Afundo.</li>
+            <li class="card-items">Extensão de perna.</li>
+            <li class="card-items">Agachamento com peso corporal.</li>
+            <li class="card-items">Pliometria de salto.</li>
+            <li class="card-items">Caminhada lateral.</li>
+            <li class="card-items">Agachamento sumô.</li>
+            <li class="card-items">Elevação de calcanhar.</li>
+            <li class="card-items">Agachamento unilateral.</li>
+          </ul>
         </div>
+  
+        <div class="empurrar-card">
+          <h1 class="card-exercise">Glúteos</h1>
+          <h1 class="card-name">GLÚTEOS</h1>
+          <h3>Exemplos de exercícios para trabalhar os Glúteos:</h3>
+          <ul class="card-list">
+            <li class="card-items">Agachamento.</li>
+            <li class="card-items">Afundo.</li>
+            <li class="card-items">Levantamento terra sumô.</li>
+            <li class="card-items">Stiff.</li>
+            <li class="card-items">Elevação de quadril.</li>
+            <li class="card-items">Glúteo na máquina de cabo.</li>
+            <li class="card-items">Abdução de quadril na máquina.</li>
+            <li class="card-items">Agachamento sumô.</li>
+            <li class="card-items">Ponte unilateral.</li>
+            <li class="card-items">Agachamento búlgaro.</li>
+          </ul>
+        </div>
+  
+        <div class="empurrar-card">
+          <h1 class="card-exercise">Posterior</h1>
+          <h1 class="card-name">POSTERIOR DE COXA</h1>
+          <h3>Exemplos de exercícios para trabalhar posterior de coxa:</h3>
+          <ul class="card-list">
+            <li class="card-items">Prensa de pernas.</li>
+            <li class="card-items">Cadeira romana.</li>
+            <li class="card-items">Ponte com pernas estendidas.</li>
+            <li class="card-items">Puxada de perna deitada.</li>
+            <li class="card-items">Curl de perna deitado.</li>
+            <li class="card-items">Elevação de perna sentada.</li>
+            <li class="card-items">Avanço com perna estendida.</li>
+            <li class="card-items">Pernada de uma perna só.</li>
+            <li class="card-items">Good morning.</li>
+            <li class="card-items">Deadlift.</li>
+          </ul>
+        </div>
+
+      <div class="empurrar-card">
+        <h1 class="card-exercise">Bíceps</h1>
+        <h1 class="card-name">BÍCEPS</h1>
+        <h3>Exemplos de exercícios para trabalhar os bíceps:</h3>
+        <ul class="card-list">
+          <li class="card-items">Rosca direta com barra.</li>
+          <li class="card-items">Rosca direta com halteres.</li>
+          <li class="card-items">Rosca martelo com halteres.</li>
+          <li class="card-items">Rosca martelo com barra.</li>
+          <li class="card-items">Rosca concentrada.</li>
+          <li class="card-items">Rosca Scott com barra.</li>
+          <li class="card-items">Rosca Scott com halteres.</li>
+          <li class="card-items">Rosca inversa com barra.</li>
+          <li class="card-items">Rosca inversa com halteres.</li>
+          <li class="card-items">Rosca concentrada inclinada.</li>
+        </ul>
+
+      </div>
+
+      <div class="empurrar-card">
+        <h1 class="card-exercise">tríceps</h1>
+        <h1 class="card-name">TRÍCEPS</h1>
+        <h3>Exemplos de exercícios para trabalhar os tríceps:</h3>
+        <ul class="card-list">
+          <li class="card-items">Flexão de tríceps.</li>
+          <li class="card-items">Mergulhos.</li>
+          <li class="card-items">Extensão de tríceps com halteres.</li>
+          <li class="card-items">Tríceps com corda na polia.</li>
+          <li class="card-items">Extensão de tríceps com barra.</li>
+          <li class="card-items">Flexão diamante.</li>
+          <li class="card-items">Extensão de tríceps com kettlebell.</li>
+          <li class="card-items">Tríceps no banco.</li>
+          <li class="card-items">Extensão de tríceps na máquina.</li>
+          <li class="card-items">Flexão em pino.</li>
+        </ul>
+
+      </div>
+
+      <div class="empurrar-card">
+        <h1 class="card-exercise">antebraço</h1>
+        <h1 class="card-name">ANTEBRAÇO</h1>
+        <h3>Exemplos de exercícios para trabalhar os antebraço:</h3>
+        <ul class="card-list">
+          <li class="card-items">Flexões de punho com halteres.</li>
+          <li class="card-items">Extensões de punho com barra.</li>
+          <li class="card-items">Flexões de punho com corda.</li>
+          <li class="card-items">Extensões de punho com corda.</li>
+          <li class="card-items">Rotações de pulso com halteres.</li>
+          <li class="card-items">Rotações de pulso com barra.</li>
+          <li class="card-items">Flexões de dedo.</li>
+          <li class="card-items">Espremer uma bola de borracha.</li>
+          <li class="card-items">Pinças de dedo.</li>
+          <li class="card-items">Escalada.</li>
+        </ul>
 
     </div>
 
-    <script type="text/javascript">
+    </div>
 
-        window.addEventListener('scroll',function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky',window.scrollY > 0);
-        });
-
-        // munu mobile
-        function toggleMenu(){
-            const toggleMenu = document.querySelector('.toggleMenu');
-            const navigation = document.querySelector('.navigation');
-            toggleMenu.classList.toggle('active')
-            navigation.classList.toggle('active')
-        }
-    </script>
     
-</body>
+    <!-- variations -->
+    <section class="variations" id="variations">
+      <div class="content1">
+        <div class="contentBx w50">
+          <h3>Variações</h3>
+          <p>
+            Dropset: Um dropset é uma técnica de levantamento de peso em que
+            você executa uma série de um exercício até a falha ou quase falha e,
+            em seguida, reduz imediatamente o peso e continua com outra série, o
+            objetivo de um dropset é aumentar a fadiga muscular e estimular um
+            maior crescimento muscular.<br />
+
+            <br />Biset: Um biset é uma técnica de levantamento de peso em que
+            você executa dois exercícios diferentes consecutivamente sem
+            descanso. Os exercícios normalmente visam diferentes grupos
+            musculares ou diferentes aspectos do mesmo grupo muscular, o
+            objetivo de um biset é economizar tempo e aumentar a intensidade
+            trabalhando vários grupos musculares em um curto período de
+            tempo.<br />
+
+            <br />Pirâmide: Uma pirâmide é uma técnica de levantamento de peso
+            em que você aumenta ou diminui progressivamente o peso levantado
+            para cada série.<br />
+
+            <br />Progressão de peso: Uma progressão de peso é uma técnica de
+            levantamento de peso em que você aumenta gradualmente a quantidade
+            de peso levantado para cada série ou treino. Isso pode ser feito em
+            pequenos incrementos ao longo do tempo, como adicionar alguns quilos
+            a cada semana ou a cada mês. O objetivo de uma progressão de peso é
+            desafiar gradualmente os músculos e estimular maior crescimento e
+            força muscular. <br />
+
+            <br />Dica: É importante variar os métodos de treinamento para
+            evitar a adaptação muscular e manter o progresso no treinamento. É
+            recomendado que um profissional de educação física seja consultado
+            para orientar o treinamento e evitar lesões. <br />
+          </p>
+        </div>
+
+        <div class="w50">
+          <img src="./assets/10.jpg" class="img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- food -->
+
+    <section class="food" id="food">
+      <div class="box">
+        <div class="card-foods">
+          <h4>Carboidratos</h4>
+          <p class="info-foods">
+            Ajuda no ganho de massa magra, fornece e armazena energia para o
+            corpo, no pré-treino fornece energia e no pós-treino ajudam na
+            construção muscular se sua ingestão for associada a uma proteína.
+          </p>
+        </div>
+
+        <div class="card-foods">
+          <h4>Proteínas</h4>
+          <p class="info-foods">
+            Faz a reparação e remodela os músculos e os tecidos danificados, o
+            que contribuindo para o crescimento saudável da musculatura, também
+            ajuda a acelerar o metabolismo, aumentando o gasto calórico e e a
+            disposição na hora dos treinos.
+          </p>
+        </div>
+
+        <div class="card-foods">
+          <h4>Gorduras</h4>
+          <p class="info-foods">
+            As gorduras boas ajudam no ganho de massa, liberam hormônios
+            anabólicos, que contribuem no ganho de massa.
+          </p>
+        </div>
+        <div class="card-foods">
+          <h4>Bulking</h4>
+          <p class="info-foods">
+			Fase em que o objetivo principal é ganhar massa muscular. <br> 
+			Durante esse período, os praticantes aumentam sua ingestão calórica para fornecer ao corpo os nutrientes necessários para o crescimento muscular.
+          </p>
+        </div>
+        <div class="card-foods">
+          <h4>Cutting</h4>
+          <p class="info-foods">
+			Fase em que o objetivo principal é reduzir a gordura corporal enquanto se mantém a massa muscular adquirida durante o bulking.<br>
+			Nesta fase, é criado um déficit calórico, onde a quantidade de caloria consumida é menor do que a queimada.
+          </p>
+        </div>
+      </div>
+
+      <div class="box-2">
+        <h4>Alimentos Tabela (TACO)</h4>
+        <span
+          >Energia | Carboidratos 100g | Proteínas 100g | Gorduras 100g</span
+        >
+        <ul class="list-foods">
+          <li class="foods-items">
+            Batata-doce cozida:
+            <span class="nutri"> 77 KCAL | 18,4g CHO| 0,6g PTN | 0,1g LPD</span>
+          </li>
+          <li class="foods-items">
+            Batata-inglesa cozida:
+            <span> 52 KCAL | 11,9g CHO| 1,2g PTN | 0g LPD</span>
+          </li>
+          <li class="foods-items">
+            Lentilha cozida:
+            <span> 93 KCAL | 16,3g CHO | 6,3g PTN | 0,5g LPD</span>
+          </li>
+          <li class="foods-items">
+            Mandioca cozida:<span>
+              125 KCAL | 30,1g CHO | 0,6g PTN | 0,3g LPD</span
+            >
+          </li>
+          <li class="foods-items">
+            Banana maçã:<span> 87 KCAL | 22,3g CHO | 1,8g PTN | 0,1g LPD</span>
+          </li>
+          <li class="foods-items">
+            Grão-de-bico cru:
+            <span> 335 KCAL | 57,9g CHO | 21,2g PTN | 5,4g LPD</span>
+          </li>
+          <li class="foods-items">
+            Mel:<span> 309KCAL | 84,0g CHO | 0,0g PTN | 0,0g LPD</span>
+          </li>
+          <li class="foods-items">
+            Aveia crua.
+            <span> 394 KCAL | 66,6g CHO | 13,9g PTN | 8,5g LPD</span>
+          </li>
+          <li class="foods-items">
+            Macarrão. <span> 371 KCAL | 76,6g CHO | 10,3g PTN | 2,3g LPD</span>
+          </li>
+          <li class="foods-items">
+            Inhame. <span>97 KCAL | 23,2g CHO | 2,1g PTN | 0,2g LPD</span>
+          </li>
+          <li class="foods-items">
+            Arroz. <span>124 KCAL | 25,8g CHO | 2,6g PTN |1,0g LPD</span>
+          </li>
+          <li class="foods-items">
+            Pinha. <span>88 KCAL | 22,5g CHO | 1,5g PTN | 0,3g LPD</span>
+          </li>
+          <li class="foods-items">
+            Pão francês. <span>300 KCAL | 58,7g CHO |8,0g PTN | 3,1g LPD</span>
+          </li>
+          <li class="foods-items">
+            Farinha de milho.<span>351 KCAL | 79,1g CHO | 7,2g PTN | 1,5g LPD</span>
+          </li>
+          <li class="foods-items">
+            Uva. <span>49 KCAL | 12,7g CHO |0,6g PTN | 0,2g LPD</span>
+          </li>
+          <li class="foods-items">
+            Jaca. <span>88 KCAL | 22,5g CHO | 1,4g PTN | 0,3g LPD</span>
+          </li>
+          <li class="foods-items">
+            Manga. <span>72 KCAL | 19,4g CHO | 0,4g PTN | 0,2g LPD</span>
+          </li>
+          <li class="foods-items">
+            Pera. <span>53 KCAL | 14,0g CHO | 0,60g PTN | 0,10g LPD</span>
+          </li>
+          <li class="foods-items">
+            Maçã. <span>56 KCAL | 15,2g CHO | 0,3g PTN | 0 g LPD</span>
+          </li>
+          <li class="foods-items">
+            Banana. <span>92 KCAL | 23,9g CHO | 1,4g PTN | 0,1g LPD</span>
+          </li>
+          <li class="foods-items">
+            Beterraba crua. <span>49 KCAL | 11,1g CHO | 2,0g PTN | 0,1g LPD</span>
+          </li>
+          <li class="foods-items">
+            Macaxeira. <span>125 KCAL | 30,1g CHO | 0,6g PTN | 0,3g LPD</span>
+          </li>
+          <li class="foods-items">
+            Vagem. <span>25 KCAL | 5,4g CHO | 1,8g PTN | 0,2g LPD</span>
+          </li>
+          <li class="foods-items">
+            Cará. <span>78 KCAL | 18,9g CHO | 1,5g PTN | 0,1g LPD</span>
+          </li>
+          <li class="foods-items">
+            Abóbora. <span>48 KCAL | 10,8g CHO | 1,4g PTN | 0,7g LPD</span>
+          </li>
+          <li class="foods-items">Carne bovina (contrafilé, patinho, coxão mole, alcatra)
+            <span>131 a 246 KCAL | 0g CHO | 21,9g a 26,9g PTN | 2,9g a 18,1g LPD</span></li>
+          <li class="foods-items">Carne suína (lombo, pernil, costela)
+            <span>123 a 319 KCAL | 0g CHO | 21,3g a 22,9g PTN | 2,5g a 22,4g LPD</span></li>
+          <li class="foods-items">Frango (peito, coxa, asa)
+            <span>100 a 190 KCAL | 0g CHO | 21,5g a 31,6gPTN | 0,8g a 6,4g LPD</span></li>
+          <li class="foods-items">Peixe (tilápia, salmão, atum)
+            <span>90 a 239 KCAL | 0g CHO | 19,4g a 25,1gPTN | 0,8g a 19,9g LPD</span></li>
+          
+          
+          
+        </ul>
+      </div>
+
+	<div class="box-3">
+
+	  <div class="card-dicas">
+		<h4>Dicas para Bulking</h4>
+			<ul class="dicas-1">
+				<li class="foods-items">Consuma um excedente calórico para promover o crescimento muscular.</li>
+				<li class="foods-items">Priorize uma dieta rica em proteínas, carboidratos e gorduras saudáveis.</li>
+				<li class="foods-items">Realize treinamento de força intenso para estimular o crescimento muscular.</li>
+				<li class="foods-items">Esteja preparado para ganhar um pouco de gordura corporal durante essa fase.</li>
+			</ul>
+		
+			<h4>Cardápio para Bulking:</h4>
+			<p class="info-foods">
+
+			<span class="diet">Refeição 1:</span>
+
+			Omelete de claras de ovo com vegetais (espinafre, tomate, cebola)
+			Fatias de pão integral
+			1 porção de frutas (ex: banana). <br>
+
+			<span class="diet">Refeição 2:</span>
+
+			Shake de proteína com leite e frutas. <br>
+
+			<span class="diet">Refeição 3:</span>
+
+			Peito de frango grelhado
+			Arroz integral
+			Brócolis cozido. <br>
+
+			<span class="diet">Refeição 4 (pré-treino):</span>
+
+			Batata-doce assada
+			Filé de salmão grelhado
+			Salada mista (alface, tomate, pepino). <br>
+
+			<span class="diet">Refeição 5 (pós-treino):</span>
+
+			Shake de proteína com leite e uma banana. <br>
+
+			<span class="diet">Refeição 6:</span>
+
+			Bife de carne magra grelhado
+			Quinoa
+			Legumes no vapor (cenoura, vagem) <br>
+
+			<span class="diet">Refeição 7 (antes de dormir):</span>
+
+			Caseína (suplemento de proteína de absorção lenta)
+			1 porção de amêndoas ou castanhas.
+			<hr>
+			<strong>Lembre-se de ajustar as porções e os alimentos de acordo com suas necessidades e preferências. <br> 
+			É importante monitorar seu progresso e fazer ajustes conforme necessário. <br>
+			Consultar um nutricionista esportivo pode ser útil para uma orientação personalizada e adequada às suas metas.</strong>
+			</p>
+
+	  </div>
+	  <div class="card-dicas">
+		<h4>Dicas para Cutting</h4>
+		
+
+		<ul class="dicas-1">
+			<li class="foods-items">Crie um déficit calórico para promover a perda de gordura.</li>
+			<li class="foods-items">Mantenha uma ingestão adequada de proteínas para preservar a massa muscular.</li>
+			<li class="foods-items">Dê ênfase a alimentos nutritivos e de baixa caloria na sua dieta.</li>
+			<li class="foods-items">Combine uma dieta controlada com exercícios cardiovasculares.</li>
+		</ul>
+		<h4>Cardápio para Cutting:</h4>
+		<p class="info-foods">
+	
+			<span class="diet">Refeição 1:</span>
+	
+			Omelete de claras de ovo com vegetais (espinafre, pimentão, cogumelos)
+			Fatias de pão integral.<br>
+
+			<span class="diet">Refeição 2:</span>
+	
+			Iogurte grego com frutas e nozes.<br>
+
+			<span class="diet">Refeição 3: </span>
+	
+			Peito de frango grelhado
+			Quinoa
+			Vegetais assados (abobrinha, berinjela, pimentão)<br>
+
+			<span class="diet">Refeição 4 (pré-treino):</span>
+	
+			Shake de proteína com água e uma porção de aveia.<br>
+
+			<span class="diet">Refeição 5 (pós-treino):</span>
+	
+			Peixe grelhado (salmão, tilápia)
+			Batata-doce cozida
+			Brócolis no vapor.<br>
+
+			<span class="diet">Refeição 6:</span>
+	
+			Peito de frango grelhado
+			Arroz integral
+			Salada mista (alface, tomate, pepino)<br>
+
+			<span class="diet">Refeição 7 (antes de dormir):</span>
+	
+			Caseína (suplemento de proteína de absorção lenta),
+			Uma porção de vegetais crus (cenoura, aipo) com homus
+			<hr>
+			<strong>Lembre-se de ajustar as porções e os alimentos de acordo com suas necessidades e preferências. <br> 
+			É importante monitorar seu progresso e fazer ajustes conforme necessário. <br>
+			Consultar um nutricionista esportivo pode ser útil para uma orientação personalizada e adequada às suas metas.</strong>
+	
+		  </p>
+
+	  </div>
+
+	</div>
+
+    </section>
+       
+    <!--supplementation -->
+    <section class="supplementation" id="supplementation">
+      <h2>Suplementação</h2>
+      <div class="contentBx">
+        <div class="form">
+          <p>
+            <span class="supplement">Proteína em pó:</span> A proteína é
+            essencial para o crescimento muscular e a recuperação após o treino.
+            A proteína em pó é uma maneira conveniente de aumentar sua ingestão
+            diária de proteínas. <br />
+            <br />
+            <span class="supplement">Creatina:</span> A creatina é um composto
+            natural encontrado nos músculos e é utilizada para aumentar a força
+            e o desempenho durante o treino.<br />
+            <br />
+            <span class="supplement">BCAA:</span> Os aminoácidos de cadeia
+            ramificada (BCAAs) incluem leucina, isoleucina e valina e são
+            importantes para o crescimento e reparação muscular.<br />
+            <br />
+            <span class="supplement">Óxido nítrico:</span> O óxido nítrico é um
+            suplemento que pode aumentar o fluxo sanguíneo para os músculos,
+            melhorando a entrega de nutrientes e aumentando a resistência.<br />
+            <br />
+            <span class="supplement">Glutamina:</span> A glutamina é um
+            aminoácido importante para a recuperação muscular e o sistema
+            imunológico.<br />
+            <br />
+            <span class="supplement">Beta-alanina:</span> A beta-alanina é um
+            aminoácido que pode melhorar o desempenho e aumentar a
+            resistência.<br />
+            <br />
+            <span class="supplement">Cafeína:</span> A cafeína é um estimulante
+            que pode melhorar a energia, a resistência e a força durante o
+            treino.<br />
+            <br />
+            <span class="supplement">ZMA:</span> ZMA é uma combinação de zinco,
+            magnésio e vitamina B6 e pode ajudar a aumentar a força e melhorar a
+            qualidade do sono.<br />
+            <br />
+            <span class="supplement">HMB:</span> O
+            beta-hidroxi-beta-metilbutirato (HMB) é um metabólito da leucina e
+            pode ajudar a prevenir a perda muscular e melhorar a recuperação.<br />
+            <br />
+            <span class="supplement">Vitaminas e minerais:</span> As vitaminas e
+            minerais são importantes para a saúde geral e o desempenho,
+            incluindo a vitamina D, a vitamina C, o ferro e o cálcio.<br />
+            <br />
+            Lembre-se de que os suplementos devem ser utilizados como
+            complemento a uma dieta equilibrada e um programa de treinamento
+            adequado. Eles não substituem uma alimentação saudável e variada,
+            nem garantem resultados por si só.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer -->
+    <section class="footer">
+      <p class="text">Desenvolvido por Paulo Meira</p>
+      <ul>
+        <p class="text">
+			Siga-nos no</p>
+        <li>
+          <a href="https://www.instagram.com/prhmeira.84/" target="_blank"><img src="./assets/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggleMenu() {
+        const toggleMenu = document.querySelector(".toggleMenu");
+        const navigation = document.querySelector(".navigation");
+        toggleMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

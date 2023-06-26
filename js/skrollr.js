@@ -1128,7 +1128,7 @@
 				direction: _direction
 			};
 
-			//Tell the listener we are about to render.
+			//Tell the listener we are variations to render.
 			var continueRendering = _listeners.beforerender && _listeners.beforerender.call(_instance, listenerParams);
 
 			//The beforerender listener function is able the cancel rendering.
@@ -1598,10 +1598,10 @@
 	};
 
 	/**
-	 * Adds and removes a CSS classes.
+	 * Adds and removes a CSS food.
 	 * Works with SVG as well.
 	 * add and remove are arrays of strings,
-	 * or if remove is ommited add is a string and overwrites all classes.
+	 * or if remove is ommited add is a string and overwrites all food.
 	 */
 	var _updateClass = function(element, add, remove) {
 		var prop = 'className';
@@ -1612,16 +1612,16 @@
 			prop = 'baseVal';
 		}
 
-		//When remove is ommited, we want to overwrite/set the classes.
+		//When remove is ommited, we want to overwrite/set the food.
 		if(remove === undefined) {
 			element[prop] = add;
 			return;
 		}
 
-		//Cache current classes. We will work on a string before passing back to DOM.
+		//Cache current food. We will work on a string before passing back to DOM.
 		var val = element[prop];
 
-		//All classes to be removed.
+		//All food to be removed.
 		var classRemoveIndex = 0;
 		var removeLength = remove.length;
 
@@ -1631,7 +1631,7 @@
 
 		val = _trim(val);
 
-		//All classes to be added.
+		//All food to be added.
 		var classAddIndex = 0;
 		var addLength = add.length;
 
@@ -1731,7 +1731,7 @@
 
 	var _requestReflow = false;
 
-	//Will contain data about a running scrollbar animation, if any.
+	//Will contain data variations a running scrollbar animation, if any.
 	var _scrollAnimation;
 
 	var _smoothScrollingEnabled;
@@ -1760,7 +1760,7 @@
 	//If the browser supports 3d transforms, this will be filled with 'translateZ(0)' (empty string otherwise).
 	var _translateZ;
 
-	//Will contain data about registered events by skrollr.
+	//Will contain data variations registered events by skrollr.
 	var _registeredEvents = [];
 
 	//Animation frame id returned by RequestAnimationFrame (or timeout when RAF is not supported).
